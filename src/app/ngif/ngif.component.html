@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>ngIf 
+      <button class="btn btn-primary" type="button" (click)="visible = !visible">Btn-Ng-If</button>
+      visibilidad:  {{visible}}
+  </h2>
+  <p class="text-danger" *ngIf="visible; else alternative"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni harum, ut sapiente iste consequuntur vero cumque voluptatum sed similique aperiam, molestias consectetur quas reiciendis quaerat labore odio eveniet corrupti.</p> 
+
+  <ng-template #alternative>
+    <p class="text-secondary" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam rem nobis minima asperiores officia enim porro. Quo officia excepturi quidem consequatur aperiam modi aut explicabo magni, magnam voluptatum hic?</p>
+  </ng-template>
+  
+</div>

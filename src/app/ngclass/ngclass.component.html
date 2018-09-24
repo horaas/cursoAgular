@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>ngClass
+    <button class="btn btn-primary" type="button" (click)="clase = 'primero'">Primera clase</button>
+    <button class="btn btn-secondary" type="button" (click)="clase = 'segundo'">Segunda clase</button>
+  </h2>
+  <p class="text-info bg-dark d-none" [ngClass]="{'d-block': clase == 'primero'}">Texto 1: Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Numquam commodi in debitis magni, nam facilis minus? Corrupti, est! Suscipit
+    doloribus minus consequuntur sequi ipsa quisquam, aperiam inventore dolorum nobis dignissimos!</p>
+  <p class="bg-primary d-none" [ngClass]="{'d-block': clase == 'segundo'}">Texto 2: Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Obcaecati laborum architecto excepturi autem, pariatur eaque numquam assumenda
+    veritatis, itaque doloremque nam commodi optio fugit nihil, porro necessitatibus ut similique ratione?</p>
+</div>

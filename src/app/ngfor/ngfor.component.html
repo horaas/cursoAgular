@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>ngFor</h2>
+
+  <table class="table table-light">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">TIPO</th>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">EDAD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let animal of animales, index as i">
+        <td scope="row">{{ i+1 }}</td>
+        <td>{{ animal.tipo}}</td>
+        <td>{{ animal.nombre}}</td>
+        <td>{{ animal.edad}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
