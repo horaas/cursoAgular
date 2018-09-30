@@ -4,9 +4,9 @@ import { CuerpoComponent } from "../cuerpo/cuerpo.component";
 import { RoutesComponent } from "./routes.component";
 
 const routes: Routes = [
-    // { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: '', component: RoutesComponent },
-    { path: 'cuerpo', component: CuerpoComponent }
+    { path: '', component: RoutesComponent, pathMatch: 'full' },
+    { path: 'cuerpo', component: CuerpoComponent },
+    { path: '**', redirectTo: '', pathMatch: 'full' },
 
 ];
 

@@ -12,6 +12,10 @@ import { AppRoutingModule } from './routes/ruotes-routing.component';
 import { NavComponent } from './routes/nav/nav.component';
 import { FooterComponent } from './routes/footer/footer.component';
 
+// servicios
+import { ServicioService } from './servicio.service';
+import { ServiciosComponent } from './servicios/servicios.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +25,16 @@ import { FooterComponent } from './routes/footer/footer.component';
     RoutesComponent,
     CuerpoComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ServicioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
