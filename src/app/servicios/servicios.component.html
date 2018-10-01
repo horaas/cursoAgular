@@ -2,10 +2,10 @@
   <h2>Servicios</h2>
 
   <ul class="list-group mt-2">
-    <li class="list-group-item"  *ngFor="let team of equipo">
+    <li class="list-group-item"  *ngFor="let team of equipo, index as i">
       <h6>Nombre: {{team.nombre}}</h6>
       <h6>Especialidad: {{team.especialidad}}</h6>
-      <a href="#">Leer mas...</a>
+      <a  [routerLink]="[ '/descripcion', i ]">Leer mas...</a>
     </li>
   </ul>
 </div>
