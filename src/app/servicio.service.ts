@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-//import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,18 +15,21 @@ export class ServicioService {
     {
       nombre: "Maria",
       especialidad: "CSS",
-      descripcion: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed veniam illum recusandae blanditiis adipisci, quis eaque dolores dolor et libero fugiat iste officiis soluta quo architecto porro molestiae? Dolor, cupiditate!"
+      descripcion: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed voluptas maxime molestiae consectetur quas vel illum repellat, quos odit magnam, doloribus id porro cupiditate. Consequuntur alias labore quisquam nemo atque?"
     }
   ]
-  constructor(/*private http: HttpClient*/) {
-    // this.http.get('url')
-    //   .map((res: Response) => {
-    //     res.json();
-    // })
-    console.log("Hola llame al servicio");
+  constructor(private http: HttpClient) {
+    this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe((res) => {
+      console.dir(res);
+    });
    }
 
   obtenerEquipo() {
     return this.equipo;
   }
+
+  getIdEquipo(id) {
+    return this.equipo[id];
+  }
+
 }
