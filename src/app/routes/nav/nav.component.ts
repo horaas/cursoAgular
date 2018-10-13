@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  public configNav:any = [];
-  constructor() { 
+  public configNav: any = [];
+  constructor() {
     this.configNav = [
       {
         name: 'Home',
@@ -33,7 +33,7 @@ export class NavComponent implements OnInit {
         name: 'Servicios',
         link: 'servicios'
       }
-    ]
+    ];
   }
 
   ngOnInit() {
