@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "cursoAngular"
+  "defaultProject": "cursoAngular",
+  "cli": {
+    "analytics": "555118ae-40ba-4802-88e6-c7852d7baf7d"
+  }
 }
